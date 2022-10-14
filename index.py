@@ -76,4 +76,4 @@ print(f'{counts.serial_duplicated} Serial Numbers are duplicated in staging shee
 print(f'{counts.mac_serial_mismatch} MAC and Serial mismatches on the staging sheet')
 
 
-endMessage = input('Script Complete.')
+endMessage = print('Script Complete.')
