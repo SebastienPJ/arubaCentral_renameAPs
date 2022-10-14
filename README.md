@@ -6,3 +6,4 @@ A tool that takes the exported list from Aruba Central and renames devices based
 Improvements:
 - Create a frontend to remove print statements
 - Expand functionality to not just renaming but changing other values
+- Change all MAC and Serial values to lower case before validation steps

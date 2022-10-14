@@ -46,7 +46,8 @@ df_staging = pd.read_excel(staging_filepath, engine='openpyxl')
 
 for row in range(len(df_export)):
     currentRow = df_export.iloc[row]
-    mac = currentRow[EXPORT_LIST_MAC_COL].upper()
+    mac = currentRow[EXPORT_LIST_MAC_COL].lower()
+    # mac = currentRow[EXPORT_LIST_MAC_COL].upper()
     serial = currentRow[EXPORT_LIST_SERIAL_COL]
     
     if (validate.isMacUnique(mac, STAGING_MAC_COL, df_staging) 
